@@ -1,8 +1,15 @@
 // Home Content
 
 .home {
+  position: relative;
+  top: 98px;
+
+  @media @phone {
+    .un-fix();
+  }
 
   .intro {
+    
 
     h2 {
       padding: 15px;
@@ -13,7 +20,9 @@
     }
 
     img {
-      width: 100%;
+      display: block;
+      margin: 0 auto;
+      width: 96%;
       border-radius: 6.5px;
     }
   

@@ -4,6 +4,13 @@
     width: 100%;
     background-color: @nav-bg;
     border-bottom: 2px solid @nav-border;
+    position: fixed;
+    z-index: 99;
+    opacity: .8;
+
+    @media @phone {
+        .un-fix();
+    }
 
     nav {
         width: 100%;
