@@ -1,1 +1,32 @@
 // Mixins Here
+
+.flex() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.un-fix() {
+    position: unset;
+    top: unset;
+}
+
+.button-hover() {
+    background-color: @shuttle-gray;
+    color: @btn-bg-color;
+}
+
+.button(@font-size, @bg-color, @font-color) {    
+    background-color: @bg-color;
+    font-size: @font-size;
+    color: @font-color;
+    font-weight: bold;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 6px;
+
+    @media @phone {
+        width: 96%;
+        padding: 20px;
+    }
+}
